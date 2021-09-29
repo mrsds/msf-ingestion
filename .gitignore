@@ -1,0 +1,13 @@
+.idea
+*.pyc
+*.lis
+VISTA
+*txt
+*json
+SOURCES
+VISTSA
+tmp
+.DS_Store
+TESTDATA
+VISTA*
+SOURCES*
