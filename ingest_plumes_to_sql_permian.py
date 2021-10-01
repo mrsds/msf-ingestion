@@ -586,12 +586,12 @@ def ingest_aviris_plume_geojson(geojson, s3_bucket="bucket", test_only=False, im
 
     # json_s3_url = s3util.upload_file_to_s3(geojson, s3_bucket=s3_bucket, test_only=test_only)
 
-    rgb_s3_url, rgb_s3_url_thumb = s3util.upload_image_to_s3(rgb_png, s3_bucket=s3_bucket, test_only=True)
-    plume_s3_url, plume_s3_url_thumb = s3util.upload_image_to_s3(plume_rotated_png, s3_bucket=s3_bucket, test_only=True)
-    rgbqlctr_s3_url, rgbqlctr_s3_url_thumb = s3util.upload_image_to_s3(rgbqlctr_png, s3_bucket=s3_bucket, test_only=True)
+    rgb_s3_url, rgb_s3_url_thumb = s3util.upload_image_to_s3(rgb_png, s3_bucket=s3_bucket, test_only=test_only)
+    plume_s3_url, plume_s3_url_thumb = s3util.upload_image_to_s3(plume_rotated_png, s3_bucket=s3_bucket, test_only=test_only)
+    rgbqlctr_s3_url, rgbqlctr_s3_url_thumb = s3util.upload_image_to_s3(rgbqlctr_png, s3_bucket=s3_bucket, test_only=test_only)
 
-    rgb_tiff_s3_url, rgb_tiff_s3_url_thumb = s3util.upload_image_to_s3(rgb_tiff, s3_bucket=s3_bucket, test_only=True, upload_thumbnail=False)
-    plume_tiff_s3_url, plume_tiff_s3_url_thumb = s3util.upload_image_to_s3(plume_tiff, s3_bucket=s3_bucket, test_only=True, upload_thumbnail=False)
+    rgb_tiff_s3_url, rgb_tiff_s3_url_thumb = s3util.upload_image_to_s3(rgb_tiff, s3_bucket=s3_bucket, test_only=test_only, upload_thumbnail=False)
+    plume_tiff_s3_url, plume_tiff_s3_url_thumb = s3util.upload_image_to_s3(plume_tiff, s3_bucket=s3_bucket, test_only=test_only, upload_thumbnail=False)
 
 
     data_date = "{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}".format(YYYY=year, MM=month, DD=day, HH=hour, mm=minute,ss=second)

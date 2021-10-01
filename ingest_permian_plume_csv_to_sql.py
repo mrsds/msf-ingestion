@@ -89,7 +89,7 @@ def insert_plume(plume, cur, verbose=False, test_only=False):
     	    detection_timestamp
             )
     	VALUES (
-    	  %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
+    	  %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
     	   to_timestamp(%s, 'yyyy-mm-dd hh24:mi:ss')
     	  );
         """
