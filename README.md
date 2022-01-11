@@ -1,5 +1,8 @@
 These ingestion scripts are reliant on output from running scripts from the `msf-flow` repository.
-These scripts assume you are running a Postgres database.
+
+These scripts assume:
+- Have read/write access to a Postgres database.
+- Have Python and Bash installed
 
 For every script that interacts with the database, you must fill in the parameters inside the script itself to match your database:
 `DB_ENDPOINT = "localhost"
