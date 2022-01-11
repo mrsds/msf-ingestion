@@ -20,3 +20,5 @@ DB_NAME = ""`
 find . | grep ".tif" > list_of_image_filenames.txt
 - (Skip the first step if you already have a list of images in a text file)
 - sh ingest_plumes_from_file_to_sql.sh your-text-file-of-image-names.txt
+
+After these steps are completed, your data should be uploaded to your Postgres database such that it is visible through the Methane web portal.
